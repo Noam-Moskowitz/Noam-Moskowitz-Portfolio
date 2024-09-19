@@ -1,3 +1,21 @@
 * {
   scroll-behavior: smooth;
 }
+
+.expanding-nav-bar {
+  height: 40px;
+  transition: height 0.3s ease;
+}
+
+.expanding-nav-bar:hover {
+  height: 60px;
+}
+
+.hidden-heading {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-link:hover .hidden-heading {
+  opacity: 1; /* Show h2 when anchor is hovered */
+}
