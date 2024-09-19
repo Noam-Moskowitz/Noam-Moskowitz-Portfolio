@@ -1,8 +1,8 @@
 import React from "react";
 import { FadeText } from "../magicui/fade-text";
 import WordRotate from "../magicui/word-rotate";
-import PulsatingButton from "../magicui/pulsating-button";
 import ShinyButton from "../magicui/shiny-button";
+import DownloadCVButton from "../ui/DownloadCVButton";
 
 const Heading = () => {
   return (
@@ -39,10 +39,11 @@ const Heading = () => {
             }
           />
         </div>
-        <div className="pt-5">
+        <div className="pt-5 flex gap-5">
           <a href="#about">
             <ShinyButton text="Find Out More!" />
           </a>
+          <DownloadCVButton />
         </div>
       </div>
     </div>
