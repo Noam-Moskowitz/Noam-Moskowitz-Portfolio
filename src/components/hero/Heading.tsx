@@ -6,10 +6,10 @@ import DownloadCVButton from "../ui/DownloadCVButton";
 
 const Heading = () => {
   return (
-    <div className=" w-[50%] h-[80vh] flex items-center justify-center">
+    <div className=" md:w-[50%] py-5 md:h-[80vh] flex items-center justify-center">
       <div className="w-full flex flex-col justify-center px-10">
         <FadeText
-          className="text-4xl font-bold text-black dark:text-white"
+          className="text-lg md:text-4xl font-bold text-black dark:text-white"
           direction="up"
           framerProps={{
             show: { transition: { delay: 0.4 } },
@@ -18,30 +18,30 @@ const Heading = () => {
         />
         <div className="flex items-center gap-2">
           <FadeText
-            className="text-4xl font-bold text-black dark:text-white"
+            className="text-lg md:text-4xl font-bold text-black dark:text-white"
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.6 } },
             }}
-            text="Im a"
+            text="Im A"
           />
           <FadeText
-            className="text-4xl font-bold text-black dark:text-white"
+            className=" font-bold text-black dark:text-white"
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.8 } },
             }}
             text={
               <WordRotate
-                className="text-4xl font-bold bg-lime-600 text-primary-foreground rounded p-2 dark:text-white "
+                className="text-lg md:text-4xl font-bold bg-lime-600 text-primary-foreground rounded p-2 dark:text-white "
                 words={["Full-Stack Developer", "Front-End Developer", "Back-End Developer"]}
               />
             }
           />
         </div>
-        <div className="pt-5 flex gap-5">
+        <div className="pt-5 flex flex-col md:flex-row gap-5">
           <a href="#about">
-            <ShinyButton text="Find Out More!" />
+            <ShinyButton className="py-3" text="Find Out More!" />
           </a>
           <DownloadCVButton />
         </div>

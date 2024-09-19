@@ -26,7 +26,10 @@ const AboutWrapper = () => {
   ];
 
   return (
-    <div id="about" className="flex p-10 bg-secondary border-y-8 border-lime-700">
+    <div
+      id="about"
+      className="flex flex-col md:flex-row p-10 bg-secondary border-y-8 border-lime-700"
+    >
       {aboutMe.map((para, i) => (
         <AboutParagrah key={i} content={para.content} title={para.title} />
       ))}
