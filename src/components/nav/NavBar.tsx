@@ -5,6 +5,7 @@ import {
   HiOutlineUser,
   HiOutlineBriefcase,
   HiOutlineAcademicCap,
+  HiOutlineFolder,
 } from "react-icons/hi2";
 
 const NavBar = () => {
@@ -12,6 +13,7 @@ const NavBar = () => {
     { icon: <HiBarsArrowUp size={25} />, title: `To Top`, link: `#` },
     { icon: <HiOutlineUser size={25} />, title: `About`, link: `#about` },
     { icon: <HiOutlineBriefcase size={25} />, title: `Experience`, link: `#experience` },
+    { icon: <HiOutlineFolder size={25} />, title: `Projects`, link: `#projects` },
     { icon: <HiOutlineAcademicCap size={25} />, title: `Education`, link: `#education` },
   ];
   return (

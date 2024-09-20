@@ -4,6 +4,7 @@ import EducationWrapper from "./components/education/EducationWrapper";
 import ExpereienceWarpper from "./components/experience/ExpereienceWarpper";
 import HeroWrapper from "./components/hero/HeroWrapper";
 import NavBar from "./components/nav/NavBar";
+import ProjectsWrapper from "./components/projects/ProjectsWrapper";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeroWrapper />
       <AboutWrapper />
       <ExpereienceWarpper />
+      <ProjectsWrapper />
       <EducationWrapper />
     </>
   );
