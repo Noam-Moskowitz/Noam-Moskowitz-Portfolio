@@ -1,12 +1,18 @@
 import React from "react";
 import NavIcon from "./NavIcon";
-import { HiBarsArrowUp, HiOutlineUser, HiOutlineBriefcase } from "react-icons/hi2";
+import {
+  HiBarsArrowUp,
+  HiOutlineUser,
+  HiOutlineBriefcase,
+  HiOutlineAcademicCap,
+} from "react-icons/hi2";
 
 const NavBar = () => {
   const navItems = [
     { icon: <HiBarsArrowUp size={25} />, title: `To Top`, link: `#` },
     { icon: <HiOutlineUser size={25} />, title: `About`, link: `#about` },
     { icon: <HiOutlineBriefcase size={25} />, title: `Experience`, link: `#experience` },
+    { icon: <HiOutlineAcademicCap size={25} />, title: `Education`, link: `#education` },
   ];
   return (
     <div className="fixed bottom-6 flex justify-center  w-full z-50">
