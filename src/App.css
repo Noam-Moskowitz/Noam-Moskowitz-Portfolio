@@ -19,3 +19,18 @@
 .hover-link:hover .hidden-heading {
   opacity: 1; /* Show h2 when anchor is hovered */
 }
+
+.certificate {
+  animation: fadeInBottom 0.3s ease-out;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

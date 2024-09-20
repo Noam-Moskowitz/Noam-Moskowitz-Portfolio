@@ -1,7 +1,20 @@
 import React from "react";
 import NumberTicker from "../magicui/number-ticker";
+import CertificationModal from "./CertificationModal";
 
-const EducationSection = () => {
+interface EducationSectionProps {
+  title: string;
+  period: string;
+  description: string;
+  grade: number;
+}
+
+const EducationSection: React.FC<EducationSectionProps> = ({
+  title,
+  period,
+  description,
+  grade,
+}) => {
   return (
     <div className="flex items-center py-5 gap-8">
       <img
@@ -10,15 +23,16 @@ const EducationSection = () => {
         alt=""
       />
       <div className="border-l-2 border-primary px-8">
-        <h1 className="font-bold">Full Stack Web Developer , 535H - HackerU</h1>
-        <h2 className="">May 2023 - Aug 2024</h2>
+        <h1 className="font-bold">{title}</h1>
+        <h2 className="">{period}</h2>
         <h3 className="pt-3 pb-5">
-          Specialized in JavaScript technologies with an average project score of
-          <NumberTicker className=" font-bold pl-2" value={99} />
+          {description}
+          <NumberTicker
+            className=" font-bold ml-1 border-b-2 text-center border-lime-700 px-1"
+            value={grade}
+          />
         </h3>
-        <a className="underline" href="">
-          View Certification
-        </a>
+        <CertificationModal />
       </div>
     </div>
   );
