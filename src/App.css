@@ -24,6 +24,32 @@
   animation: fadeInBottom 0.3s ease-out;
 }
 
+.expand {
+  animation: expand 0.3s ease forwards;
+}
+
+.shrink {
+  animation: shrink 0.3s ease forwards;
+}
+
+@keyframes shrink {
+  from {
+    height: 16rem; /* Equivalent to h-64 in Tailwind */
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes expand {
+  from {
+    height: 0;
+  }
+  to {
+    height: 16rem; /* Equivalent to h-64 in Tailwind (64 * 0.25rem) */
+  }
+}
+
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
