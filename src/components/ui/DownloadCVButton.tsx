@@ -6,8 +6,8 @@ const DownloadCVButton = () => {
   return (
     <a href="./public/downloads/Noam-Moskowitz-Cv.pdf" download="Noam Moskowitz CV.pdf">
       <AnimatedSubscribeButton
-        buttonColor="#000000"
-        buttonTextColor="#ffffff"
+        buttonColor="primary"
+        buttonTextColor="primary-foreground"
         subscribeStatus={false}
         initialText={
           <span className="group inline-flex items-center">

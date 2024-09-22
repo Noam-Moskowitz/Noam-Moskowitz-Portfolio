@@ -4,7 +4,7 @@ const CertificationModal = () => {
   const [isClosed, setIsClosed] = useState(true);
   return (
     <div>
-      <span onClick={() => setIsClosed(false)} className="underline cursor-pointer">
+      <span onClick={() => setIsClosed(false)} className="underline cursor-pointer ">
         View Certification
       </span>
       {!isClosed && (

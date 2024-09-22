@@ -11,9 +11,7 @@ interface AnimatedSubscribeButtonProps {
   changeText: React.ReactElement | string;
 }
 
-export const AnimatedSubscribeButton: React.FC<
-  AnimatedSubscribeButtonProps
-> = ({
+export const AnimatedSubscribeButton: React.FC<AnimatedSubscribeButtonProps> = ({
   buttonColor,
   subscribeStatus,
   buttonTextColor,
@@ -44,7 +42,7 @@ export const AnimatedSubscribeButton: React.FC<
         </motion.button>
       ) : (
         <motion.button
-          className="relative flex w-[200px] cursor-pointer items-center justify-center rounded-md border-none p-[10px]"
+          className={`relative bg-${buttonColor} text-${buttonTextColor} flex w-[200px] cursor-pointer items-center justify-center rounded-md border-none p-[10px]`}
           style={{ backgroundColor: buttonColor, color: buttonTextColor }}
           onClick={() => setIsSubscribed(true)}
           initial={{ opacity: 0 }}

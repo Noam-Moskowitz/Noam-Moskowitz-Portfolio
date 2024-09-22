@@ -60,6 +60,7 @@ module.exports = {
         "color-4": "hsl(var(--color-4))",
         "color-5": "hsl(var(--color-5))",
         divider: "hsl(var(--divider))",
+        "background-1": "hsl(var(--background-1))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -87,6 +88,14 @@ module.exports = {
             transform: "translate(-50%, -50%) scale(0.9)",
           },
         },
+        orbit: {
+          "0%": {
+            transform: "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -101,6 +110,7 @@ module.exports = {
         },
       },
       animation: {
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
         rainbow: "rainbow var(--speed, 2s) infinite linear",
         meteor: "meteor 5s linear infinite",
         pulse: "pulse var(--duration) ease-out infinite",

@@ -4,7 +4,7 @@ import { educationArr } from "@/constants/education";
 
 const EducationWrapper = () => {
   return (
-    <div id="education" className="bg-secondary border-y-8 border-lime-700 p-10">
+    <div id="education" className="bg-background-1 border-y-8 border-divider p-10">
       <h3 className="text-4xl font-bold">Education</h3>
       {educationArr.map((item, i) => (
         <EducationSection

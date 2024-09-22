@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutWrapper from "./components/about/AboutWrapper";
+import ContactWrapper from "./components/contact/ContactWrapper";
 import EducationWrapper from "./components/education/EducationWrapper";
 import ExpereienceWarpper from "./components/experience/ExpereienceWarpper";
 import HeroWrapper from "./components/hero/HeroWrapper";
@@ -17,6 +18,7 @@ function App() {
         <ExpereienceWarpper />
         <ProjectsWrapper />
         <EducationWrapper />
+        <ContactWrapper />
       </ThemeProvider>
     </>
   );
