@@ -34,7 +34,7 @@
 
 @keyframes shrink {
   from {
-    height: 16rem; /* Equivalent to h-64 in Tailwind */
+    height: 18rem; /* Equivalent to h-64 in Tailwind */
   }
   to {
     height: 0;
@@ -46,7 +46,7 @@
     height: 0;
   }
   to {
-    height: 16rem; /* Equivalent to h-64 in Tailwind (64 * 0.25rem) */
+    height: 18rem; /* Equivalent to h-64 in Tailwind (64 * 0.25rem) */
   }
 }
 

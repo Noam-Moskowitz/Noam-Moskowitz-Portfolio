@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 
 interface NavIconProps {
   icon: ReactNode;
-  link: string;
+  link?: string;
   title: string;
   clickFunc?: () => void;
 }

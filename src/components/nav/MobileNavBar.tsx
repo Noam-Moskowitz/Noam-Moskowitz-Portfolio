@@ -6,7 +6,10 @@ import { HiOutlineArrowsPointingIn, HiOutlineArrowsPointingOut } from "react-ico
 const MobileNavBar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex flex-col items-center  bg-background rounded-full py-2 overflow-hidden md:hidden">
+    <div
+      onMouseLeave={() => setOpen(false)}
+      className="flex flex-col items-center  bg-background rounded-full py-2 overflow-hidden md:hidden border-2 shadow-lg"
+    >
       <div className={`${open ? `expand` : `shrink`} overflow-hidden`}>
         {navItems.map((item, i) => (
           <NavIcon

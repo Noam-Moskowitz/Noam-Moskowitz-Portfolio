@@ -6,6 +6,7 @@ import {
   HiOutlineBriefcase,
   HiOutlineAcademicCap,
   HiOutlineFolder,
+  HiOutlineMoon,
 } from "react-icons/hi2";
 import MobileNavBar from "./MobileNavBar";
 
@@ -15,6 +16,7 @@ export const navItems = [
   { icon: <HiOutlineBriefcase size={25} />, title: `Experience`, link: `#experience` },
   { icon: <HiOutlineFolder size={25} />, title: `Projects`, link: `#projects` },
   { icon: <HiOutlineAcademicCap size={25} />, title: `Education`, link: `#education` },
+  { icon: <HiOutlineMoon size={25} />, title: `Dark Mode` },
 ];
 
 const NavBar = () => {
