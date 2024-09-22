@@ -33,7 +33,7 @@ const Heading = () => {
             }}
             text={
               <WordRotate
-                className="text-lg md:text-4xl font-bold bg-lime-600 text-primary-foreground rounded p-2 dark:text-white "
+                className="text-lg md:text-4xl font-bold bg-divider text-primary-foreground rounded p-2 "
                 words={["Full-Stack Developer", "Front-End Developer", "Back-End Developer"]}
               />
             }
