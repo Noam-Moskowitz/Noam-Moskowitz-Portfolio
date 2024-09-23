@@ -41,7 +41,10 @@ const Heading = () => {
         </div>
         <div className="pt-5 flex flex-col md:flex-row gap-5">
           <a href="#about">
-            <ShinyButton className="py-3" text="Find Out More!" />
+            <ShinyButton
+              className="py-3 bg-divider text-primary-foreground "
+              text="Find Out More!"
+            />
           </a>
           <DownloadCVButton />
         </div>
