@@ -1,13 +1,15 @@
 import React from "react";
 import ProjectContainer from "./ProjectContainer";
-import { HiMiniRectangleGroup, HiMiniServerStack } from "react-icons/hi2";
+import { HiSignal } from "react-icons/hi2";
+import Carousel from "../ui/Carousel";
+import { bCardImages } from "@/constants/projects";
 
 const ProjectsWrapper = () => {
   const projectArr = [
     {
       title: `Final Front-End Project: B Card Platform`,
       subtitle: `HackerU (Grade: 100)`,
-      display: <HiMiniRectangleGroup size={300} />,
+      display: <Carousel images={bCardImages} />,
       content: `Developed the front end of a business card platform, enabling users with the correct
 credentials to publish virtual business cards for public viewing. Improved skills in
 JavaScript, React, front-end validation, and creating reusable React components.
@@ -18,7 +20,7 @@ JavaScript, React, front-end validation, and creating reusable React components.
     {
       title: `Final Back-End Project: B Card Platform`,
       subtitle: `HackerU (Grade: 100)`,
-      display: <HiMiniServerStack size={300} />,
+      display: <HiSignal size={300} />,
       content: `Built the back end for a business card platform, handling user authentication, back-end
               validation, token use, and authorization-level programming using MongoDB. Gained
                 expertise in back-end security and database management.

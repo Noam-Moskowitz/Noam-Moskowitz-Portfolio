@@ -32,6 +32,10 @@
   animation: shrink 0.3s ease forwards;
 }
 
+.fade {
+  animation: fadeIn 0.8 ease;
+}
+
 @keyframes shrink {
   from {
     height: 22rem; /* Equivalent to h-64 in Tailwind */
@@ -47,6 +51,16 @@
   }
   to {
     height: 22rem; /* Equivalent to h-64 in Tailwind (64 * 0.25rem) */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

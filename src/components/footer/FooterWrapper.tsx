@@ -9,7 +9,7 @@ const FooterWrapper = () => {
           <p className="font-bold">Connect with me:</p>
           <a
             className="underline mr-2 hover:text-primary"
-            href="https://github.com/yourusername"
+            href="https://github.com/Noam-Moskowitz"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -18,7 +18,7 @@ const FooterWrapper = () => {
           |
           <a
             className="underline mx-2 hover:text-primary"
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/noam-moskowitz?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,7 +27,7 @@ const FooterWrapper = () => {
           |
           <a
             className="underline mx-2 hover:text-primary"
-            href="https://twitter.com/yourusername"
+            href="https://www.facebook.com/share/hJArBfrWziqxn5SW/?mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -35,7 +35,7 @@ const FooterWrapper = () => {
           </a>
         </div>
         <div>
-          <h6 className="font-bold">Roadmap:</h6>
+          <h6 className="font-bold">Sections:</h6>
           <p className="underline flex flex-wrap gap-2">
             <a className="hover:text-primary" href="#about">
               About
@@ -63,7 +63,7 @@ const FooterWrapper = () => {
         <p className="pb-5 font-bold">
           Interested in working together?
           <a
-            className="font-normal text-primary underline hover:text-white"
+            className="font-normal text-primary underline hover:text-white pl-1"
             href="https://wa.me/972546107337?text=Hi%20Noam,%20I%20am%20interested%20in%20in%20working%20together!"
             target="_blank"
             rel="noopener noreferrer"
