@@ -3,7 +3,7 @@ import Ripple from "@/components/magicui/ripple";
 
 const HeroImage = () => {
   return (
-    <div className="relative flex h-[300px] w-full md:h-[500px] lg:h-[700px] md:w-[50%] flex-col items-center justify-center rounded-lg ">
+    <div className="relative flex h-[400px] w-full md:h-[500px] lg:h-[700px] md:w-[50%] flex-col items-center justify-center rounded-lg ">
       <img
         className="rounded-full h-[200px] md:h-[400px]"
         src="../src/images/heroImage.jpeg"

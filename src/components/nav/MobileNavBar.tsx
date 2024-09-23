@@ -25,7 +25,7 @@ const MobileNavBar = () => {
   return (
     <div
       onMouseLeave={() => setOpen(false)}
-      className="flex flex-col items-center  bg-background rounded-full py-2 overflow-hidden md:hidden border-2 shadow-lg"
+      className="flex flex-col items-center  bg-background rounded-full py-2 overflow-hidden md:hidden border-2 border-divider shadow-lg"
     >
       <div className={`${open ? `expand` : `shrink`} overflow-hidden`}>
         {navItems.map((item, i) => (

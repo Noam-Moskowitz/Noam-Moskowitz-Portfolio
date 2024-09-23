@@ -9,7 +9,10 @@ interface NavIconProps {
 
 const NavIcon: React.FC<NavIconProps> = ({ icon, link, title, clickFunc }) => {
   return (
-    <div onClick={clickFunc} className="hover:bg-secondary rounded-full transition-all hover-link">
+    <div
+      onClick={clickFunc}
+      className="hover:bg-background-1/15 dark:hover:bg-background-1 rounded transition-all hover-link"
+    >
       <a href={link} className="flex flex-col items-center border-r-2 last:border-none">
         {icon}
         <h2 className="hidden-heading">{title}</h2>
