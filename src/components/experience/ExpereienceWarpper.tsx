@@ -1,4 +1,3 @@
-import React from "react";
 import Meteors from "../magicui/meteors";
 import ExperienceSection from "./ExperienceSection";
 import { experienceArr } from "@/constants/experience";

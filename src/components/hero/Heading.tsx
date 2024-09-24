@@ -1,4 +1,3 @@
-import React from "react";
 import { FadeText } from "../magicui/fade-text";
 import WordRotate from "../magicui/word-rotate";
 import ShinyButton from "../magicui/shiny-button";

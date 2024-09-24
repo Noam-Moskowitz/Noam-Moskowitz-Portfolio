@@ -1,4 +1,3 @@
-import React from "react";
 import OrbitingCircles from "../magicui/orbiting-circles";
 
 const ContactCircles = () => {

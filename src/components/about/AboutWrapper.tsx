@@ -1,4 +1,3 @@
-import React from "react";
 import AboutParagrah from "./AboutParagrah";
 import { aboutMeArr } from "@/constants/about";
 

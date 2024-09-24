@@ -1,4 +1,3 @@
-import React from "react";
 import NavIcon from "./NavIcon";
 import {
   HiBarsArrowUp,

@@ -1,4 +1,3 @@
-import React from "react";
 import DownloadCVButton from "../ui/DownloadCVButton";
 
 const FooterWrapper = () => {

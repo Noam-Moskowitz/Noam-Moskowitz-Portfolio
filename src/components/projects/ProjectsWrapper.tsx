@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectContainer from "./ProjectContainer";
 import { HiSignal } from "react-icons/hi2";
 import Carousel from "../ui/Carousel";

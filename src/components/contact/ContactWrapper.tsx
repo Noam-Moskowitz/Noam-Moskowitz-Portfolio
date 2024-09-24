@@ -1,4 +1,3 @@
-import React from "react";
 import ContactCircles from "./ContactCircles";
 import ContactInfo from "./ContactInfo";
 

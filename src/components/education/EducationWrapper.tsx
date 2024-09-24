@@ -1,4 +1,3 @@
-import React from "react";
 import EducationSection from "./EducationSection";
 import { educationArr } from "@/constants/education";
 import Particles from "../magicui/particles";
