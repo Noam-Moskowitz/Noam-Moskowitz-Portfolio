@@ -17,8 +17,8 @@ const ProjectContainer: React.FC<ProjectContainerProps> = ({
   subtitle,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row md:odd:flex-row-reverse items-center justify-center gap-10 p-10 border-t-2 ">
-      <div className="flex justify-center min-h-[180px] w-[80vw] md:min-h-[350px] md:w-[60%] ">
+    <div className="flex flex-col md:flex-row md:odd:flex-row-reverse items-center justify-center gap-10 p-10 border-b-2 ">
+      <div className="flex justify-center min-h-[120px] w-[80vw] md:min-h-[350px] md:w-[60%] ">
         {display}
       </div>
       <div className="flex flex-col items-start justify-start md:w-[50%] gap-5">

@@ -16,7 +16,7 @@ const EducationSection: React.FC<EducationSectionProps> = ({
   grade,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center border-l-2 pl-4 mt-4 md:border-0 md:pl-0 border-primary py-5 gap-8">
+    <div className="flex flex-col md:flex-row items-start md:items-center border-l-2 pl-4 mt-4 md:border-0 md:pl-0 border-divider py-5 gap-8">
       <img
         className="w-[100px] rounded-full border-2 border-divider"
         src="/images/hacker-u-logo-small.png"

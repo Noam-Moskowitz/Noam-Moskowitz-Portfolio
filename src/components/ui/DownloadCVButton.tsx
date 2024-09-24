@@ -3,7 +3,7 @@ import { CheckIcon, ChevronRightIcon } from "lucide-react";
 
 const DownloadCVButton = () => {
   return (
-    <a href="/downloads/Noam-Moskowitz-Cv.pdf" download="Noam Moskowitz CV.pdf">
+    <a href="/downloads/Noam-Moskowitz-CV.pdf" download="Noam Moskowitz CV.pdf">
       <AnimatedSubscribeButton
         buttonColor="primary"
         buttonTextColor="primary-foreground"
