@@ -18,7 +18,7 @@ const ProjectContainer: React.FC<ProjectContainerProps> = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row md:odd:flex-row-reverse items-center justify-center gap-10 p-10 border-b-2 ">
-      <div className="flex justify-center min-h-[40vh] w-[80vw] md:min-h-[70vh] md:w-[60%] ">
+      <div className="flex justify-center min-h-[30vh] w-[80vw] md:min-h-[70vh] md:w-[60%] ">
         {display}
       </div>
       <div className="flex flex-col items-start justify-start md:w-[50%] gap-5">
