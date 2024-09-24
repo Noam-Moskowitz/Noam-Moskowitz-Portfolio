@@ -15,7 +15,7 @@ const ContactCircles = () => {
           delay={20}
           radius={80}
         >
-          <img src="./src/images/gmail.svg" alt="gmail icon" />
+          <img src="/images/gmail.svg" alt="gmail icon" />
         </OrbitingCircles>
         <OrbitingCircles
           className="size-[30px] border-none bg-transparent"
@@ -23,7 +23,7 @@ const ContactCircles = () => {
           delay={10}
           radius={80}
         >
-          <img src="./src/images/whatsapp.svg" alt="whatsapp icon" />
+          <img src="/images/whatsapp.svg" alt="whatsapp icon" />
         </OrbitingCircles>
 
         {/* Outer Circles (reverse) */}
@@ -33,7 +33,7 @@ const ContactCircles = () => {
           duration={20}
           reverse
         >
-          <img src="./src/images/linkedin.svg" alt="linked in icon" />
+          <img src="/images/linkedin.svg" alt="linked in icon" />
         </OrbitingCircles>
 
         <OrbitingCircles
@@ -43,7 +43,7 @@ const ContactCircles = () => {
           delay={20}
           reverse
         >
-          <img src="./src/images/github.svg" alt="github icon" />
+          <img src="/images/github.svg" alt="github icon" />
         </OrbitingCircles>
 
         <OrbitingCircles
@@ -52,7 +52,7 @@ const ContactCircles = () => {
           duration={20}
           reverse
         >
-          <img src="./src/images/phone-call.svg" alt="phone icon" />
+          <img src="/images/phone-call.svg" alt="phone icon" />
         </OrbitingCircles>
 
         <OrbitingCircles
@@ -61,7 +61,7 @@ const ContactCircles = () => {
           duration={20}
           delay={20}
         >
-          <img src="./src/images/facebook.svg" alt="facebook icon" />
+          <img src="/images/facebook.svg" alt="facebook icon" />
         </OrbitingCircles>
       </div>
     </>
