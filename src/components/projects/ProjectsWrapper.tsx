@@ -9,7 +9,18 @@ const ProjectsWrapper = () => {
     {
       title: `Final Front-End Project: B Card Platform`,
       subtitle: `HackerU (Grade: 100)`,
-      display: <Carousel images={bCardImages} />,
+      display: (
+        <Carousel
+          images={bCardImages.map((item, i) => (
+            <img
+              key={i}
+              className={`fade rounded shadow-md transition-opacity `}
+              src={item}
+              alt="presentation images"
+            />
+          ))}
+        />
+      ),
       content: `Developed the front end of a business card platform, enabling users with the correct
 credentials to publish virtual business cards for public viewing. Improved skills in
 JavaScript, React, front-end validation, and creating reusable React components.
@@ -31,7 +42,7 @@ JavaScript, React, front-end validation, and creating reusable React components.
   return (
     <div id="projects" className="bg-secondary  border-t-8 border-divider p-10">
       <h1 className="font-bold text-4xl">Projects</h1>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center pt-10">
         {projectArr.map((item, i) => (
           <ProjectContainer
             key={i}

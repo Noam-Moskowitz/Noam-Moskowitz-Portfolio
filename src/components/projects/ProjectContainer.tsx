@@ -17,11 +17,13 @@ const ProjectContainer: React.FC<ProjectContainerProps> = ({
   subtitle,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row md:even:flex-row-reverse md:w-2/3  items-center justify-center gap-10 p-5 border-b-2 ">
-      <div className="flex justify-center md:w-[50%]">{display}</div>
+    <div className="flex flex-col md:flex-row md:odd:flex-row-reverse items-center justify-center gap-10 p-10 border-t-2 ">
+      <div className="flex justify-center min-h-[180px] w-[80vw] md:min-h-[350px] md:w-[60%] ">
+        {display}
+      </div>
       <div className="flex flex-col items-start justify-start md:w-[50%] gap-5">
-        <h2 className="font-bold text-lg md:text-3xl underline">{title}</h2>
-        <h3 className="md:text-2xl">{subtitle}</h3>
+        <h2 className="font-bold text-lg md:text-2xl underline">{title}</h2>
+        <h3 className="md:text-xl">{subtitle}</h3>
         <p>{content}</p>
         <a href={link} target="_blank" rel="noopener noreferrer">
           <RainbowButton>GitHub</RainbowButton>

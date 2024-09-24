@@ -1,31 +1,24 @@
 import React, { useEffect, useState } from "react";
 
 interface CarouselProps {
-  images: string[];
+  images: any[];
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [index, setIndex] = useState<number>(0);
+  console.log(index);
 
   useEffect(() => {
-    setTimeout(() => {
-      if (index + 1 > images.length) {
-        setIndex(0);
-      } else {
-        setIndex((prevState) => prevState + 1);
-      }
-    }, 3500);
-  }, [index]);
+    const switchImageTimeout = setTimeout(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
 
-  return (
-    <div>
-      <img
-        className="fade rounded shadow-md transition-all"
-        src={images[index]}
-        alt="presentation images"
-      />
-    </div>
-  );
+    return () => {
+      clearTimeout(switchImageTimeout);
+    };
+  }, [index, images.length]);
+
+  return <div className="overflow-hidden h-full">{images[index]}</div>;
 };
 
 export default Carousel;
