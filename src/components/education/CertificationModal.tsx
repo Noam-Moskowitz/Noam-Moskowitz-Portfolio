@@ -4,7 +4,7 @@ const CertificationModal = () => {
   const [isClosed, setIsClosed] = useState(true);
   return (
     <div>
-      <span onClick={() => setIsClosed(false)} className="underline cursor-pointer ">
+      <span onClick={() => setIsClosed(false)} className="underline cursor-pointer z-50">
         View Certification
       </span>
       {!isClosed && (
@@ -16,7 +16,7 @@ const CertificationModal = () => {
             <img
               onClick={(e) => e.stopPropagation()}
               className="relative md:h-[90vh] certificate"
-              src="./src/images/hacker-u-certificate.jpg"
+              src="/images/hacker-u-certificate.jpg"
               alt=""
             />
           </div>

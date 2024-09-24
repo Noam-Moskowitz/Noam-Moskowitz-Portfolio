@@ -18,13 +18,6 @@ const EducationWrapper = () => {
           period={item.period}
         />
       ))}
-      <Particles
-        className="absolute top-0 h-full w-full"
-        quantity={300}
-        ease={80}
-        color="black"
-        refresh
-      />
     </div>
   );
 };
