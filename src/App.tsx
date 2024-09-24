@@ -13,7 +13,7 @@ import { ThemeProvider } from "./theme/ThemeProvider";
 function App() {
   return (
     <>
-      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
         <NavBar />
         <HeroWrapper />
         <AboutWrapper />
