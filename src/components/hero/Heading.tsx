@@ -10,7 +10,7 @@ const Heading = () => {
       <div className="w-full flex flex-col justify-center px-10">
         <div className="flex gap-2">
           <FadeText
-            className="text-xl md:text-4xl font-bold  text-divider "
+            className="text-2xl md:text-4xl font-bold  text-divider "
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.2 } },
@@ -18,7 +18,7 @@ const Heading = () => {
             text="Hi!"
           />
           <FadeText
-            className="text-xl md:text-4xl font-bold text-black dark:text-white"
+            className="text-2xl md:text-4xl font-bold text-black dark:text-white"
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.4 } },
@@ -28,7 +28,7 @@ const Heading = () => {
         </div>
         <div className="flex items-center gap-2">
           <FadeText
-            className="text-xl md:text-4xl font-bold text-black dark:text-white"
+            className="text-2xl md:text-4xl font-bold text-black dark:text-white"
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.6 } },
@@ -43,7 +43,7 @@ const Heading = () => {
             }}
             text={
               <WordRotate
-                className="text-xl md:text-4xl font-bold bg-divider text-primary-foreground  rounded p-2 "
+                className="text-2xl md:text-4xl font-bold bg-divider text-primary-foreground  rounded p-2 "
                 words={["Full-Stack Developer", "Front-End Developer", "Back-End Developer"]}
               />
             }
