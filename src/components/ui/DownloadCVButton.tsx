@@ -17,7 +17,7 @@ const DownloadCVButton = () => {
         changeText={
           <span className="group inline-flex items-center">
             <CheckIcon className="mr-2 h-4 w-4" />
-            Downloaded{" "}
+            Downloaded
           </span>
         }
       />

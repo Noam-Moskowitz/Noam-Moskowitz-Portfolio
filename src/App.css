@@ -40,6 +40,16 @@
   width: fit-content;
 }
 
+.spin-slow {
+  animation: slow-spin 3s infinite linear;
+}
+
+@keyframes slow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes shrink {
   from {
     height: 22rem; /* Equivalent to h-64 in Tailwind */
