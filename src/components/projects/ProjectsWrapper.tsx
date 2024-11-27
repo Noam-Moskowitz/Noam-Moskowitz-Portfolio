@@ -1,10 +1,38 @@
 import ProjectContainer from "./ProjectContainer";
 import { HiSignal } from "react-icons/hi2";
 import Carousel from "../ui/Carousel";
-import { bCardImages } from "@/constants/projects";
+import { bCardImages, premiumCarsImages } from "@/constants/projects";
 
 const ProjectsWrapper = () => {
   const projectArr = [
+    {
+      title: `Final Project: Premium Cars Platform`,
+      subtitle: `HackerU (Grade: 100)`,
+      display: (
+        <Carousel
+          images={premiumCarsImages.map((item, i) => (
+            <img
+              key={i}
+              className={`fade rounded shadow-md transition-opacity `}
+              src={item}
+              alt="presentation images"
+            />
+          ))}
+        />
+      ),
+      content: `Developed a full-stack car rental platform enabling admins to manage cars and branchesand customers to book rentals online with flexible pickup/drop-off options.
+      Developed a full-stack car rental platform enabling admins to manage cars and branches
+and customers to book rentals online with flexible pickup/drop-off options.
+Hook Form, Vite, Zod.
+Built from scratch, showcasing proficiency in modern JavaScript/TypeScript frameworks
+and tools.
+
+Backend: Node.js, Express.js, Mongoose, bcrypt, JWT, Joi, CORS.
+Frontend: React (TypeScript), Tailwind CSS, Shadcn UI, Redux, React Query, Axios, React
+.
+                `,
+      link: `https://github.com/Noam-Moskowitz/Premium-Cars`,
+    },
     {
       title: `Final Front-End Project: B Card Platform`,
       subtitle: `HackerU (Grade: 100)`,

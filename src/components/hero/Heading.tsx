@@ -76,7 +76,10 @@ const Heading = () => {
           text={
             <div className="py-10 grid grid-cols-2 md:grid-cols-4 gap-5  justify-start text-sm">
               {keySkillsArr.map((item, i) => (
-                <div key={i} className="flex items-center bg-secondary  px-2 py-1 rounded shadow">
+                <div
+                  key={i}
+                  className="flex items-center bg-secondary gap-1  px-2 py-1 rounded shadow"
+                >
                   {item.icon}
                   <span>{item.name}</span>
                 </div>
