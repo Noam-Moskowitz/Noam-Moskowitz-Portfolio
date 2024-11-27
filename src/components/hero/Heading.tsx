@@ -23,7 +23,7 @@ const Heading = () => {
             framerProps={{
               show: { transition: { delay: 0.4 } },
             }}
-            text="Im Noam Moskowitz"
+            text="I'm Noam Moskowitz"
           />
         </div>
         <div className="flex items-center gap-2">
@@ -33,7 +33,7 @@ const Heading = () => {
             framerProps={{
               show: { transition: { delay: 0.6 } },
             }}
-            text="Im A"
+            text="I'm A"
           />
           <FadeText
             className=" font-bold text-black dark:text-white"
