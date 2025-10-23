@@ -1,13 +1,6 @@
 export const experienceArr = [
   {
-    title: `Full-Stack Developer (freelance) | Avihu Busheri Fitness | May 2024 - Present`,
-    content: `Building two applications—one mobile app and one web-based app—from scratch, seamlessly
-        connecting them via AWS Serverless architecture. Developing both apps entirely in
-        TypeScript, with React Native and AWS skills learned on the job to meet the project’s needs.
-        Utilizing AWS Serverless to minimize hosting costs, saving the client hundreds of dollars
-        annually. Engaging in rapid development and close collaboration with the client, resulting
-        in successful user integration and highly positive customer feedback. Using Git for
-        efficient version control throughout the project, ensuring scalability, costefficiency, and
-        adaptability to new technologies.`,
+    title: `Full-Stack Developer | Montrose FX - International Payments | Jan 2025 - Present`,
+    content: `Develop and maintain a Nuxt based fintech platform for forex trading. Implement new features and enhance existing functionality across the front end and back end. Manage deployments and ensure platform stability and performance. Optimize user experience and improve platform efficiency. Collaborate with stakeholders to refine and implement business requirements. `,
   },
 ];
