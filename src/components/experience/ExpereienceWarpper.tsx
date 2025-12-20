@@ -10,9 +10,11 @@ const ExpereienceWarpper = () => {
     >
       <Meteors number={50} />
       <h2 className="text-4xl font-bold">Experience</h2>
-      {experienceArr.map((item, i) => (
-        <ExperienceSection key={i} title={item.title} content={item.content} />
-      ))}
+      <div className="space-y-10">
+        {experienceArr.map((item, i) => (
+          <ExperienceSection key={i} title={item.title} content={item.content} />
+        ))}
+      </div>
     </div>
   );
 };
