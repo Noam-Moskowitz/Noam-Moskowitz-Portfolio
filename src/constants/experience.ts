@@ -23,7 +23,7 @@ TypeScript codebase.
     ],
   },
   {
-    title: `Full Stack Developer | Avihu Busheri Fit - Avihu Team | May 2024 - Present`,
+    title: `Full Stack Developer | Avihu Busheri Fitness - Avihu Team | May 2024 - Present`,
     content: [
       `Full-Cycle Product Launch: Co-developed and launched a production-ready fitness
 ecosystem consisting of a React Native mobile app, a React admin portal, and a
