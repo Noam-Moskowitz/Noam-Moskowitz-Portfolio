@@ -1,6 +1,6 @@
 export const experienceArr = [
   {
-    title: `Head Developer | Montrose FX - International Payments | Jan 2025 - Present`,
+    title: `Lead Software Developer | Montrose FX - International Payments | Jan 2025 - Present`,
     content: [
       `Lead Architect & Sole Developer: Driving the full-stack evolution and infrastructure
 strategy as the sole technical lead. responsible for all architectural decisions,
