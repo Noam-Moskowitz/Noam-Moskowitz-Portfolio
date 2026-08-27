@@ -1,5 +1,5 @@
 import { FaAws } from "react-icons/fa";
-import { SiMongodb, SiNuxtdotjs, SiRedis, SiTypescript } from "react-icons/si";
+import { SiMongodb, SiNuxtdotjs } from "react-icons/si";
 import { DiNodejsSmall } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
 import { MdPayments, MdSecurity } from "react-icons/md";
@@ -19,7 +19,7 @@ export const keySkillsArr = [
   },
   {
     icon: <MdPayments size={28} />,
-    name: "Payments & FX",
+    name: "Payments &\u00A0FX",
   },
   {
     icon: <MdSecurity size={28} />,

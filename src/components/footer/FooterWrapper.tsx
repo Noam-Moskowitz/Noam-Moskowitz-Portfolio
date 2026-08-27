@@ -1,78 +1,89 @@
+import { ExternalLink } from "lucide-react";
 import DownloadCVButton from "../ui/DownloadCVButton";
 
 const FooterWrapper = () => {
+  const sectionLinks = [
+    { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
+    { label: "Selected Work", href: "#projects" },
+    { label: "Education", href: "#education" },
+    { label: "Contact", href: "#contact" },
+  ];
+
+  const socialLinks = [
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/noam-moskowitz",
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/Noam-Moskowitz",
+    },
+  ];
+
   return (
-    <div className="bg-background-1 py-20 md:py-12 px-5 border-t-8 border-divider flex flex-col md:flex-row gap-5 justify-around items-start ">
-      <div>
-        <div className="pb-5">
-          <p className="font-bold">Connect with me:</p>
-          <a
-            className="underline mr-2 hover:text-primary"
-            href="https://github.com/Noam-Moskowitz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          |
-          <a
-            className="underline mx-2 hover:text-primary"
-            href="https://www.linkedin.com/in/noam-moskowitz?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-          |
-          <a
-            className="underline mx-2 hover:text-primary"
-            href="https://www.facebook.com/share/hJArBfrWziqxn5SW/?mibextid=LQQJ4d"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Facebook
-          </a>
-        </div>
-        <div>
-          <h6 className="font-bold">Sections:</h6>
-          <p className="underline flex flex-wrap gap-2">
-            <a className="hover:text-primary" href="#about">
-              About
-            </a>
-            |
-            <a className="hover:text-primary" href="#experience">
-              Experience
-            </a>
-            |
-            <a className="hover:text-primary" href="#projects">
-              Projects
-            </a>
-            |
-            <a className="hover:text-primary" href="#education">
-              Education
-            </a>
-            |
-            <a className="hover:text-primary" href="#contact">
-              Contact
-            </a>
-          </p>
+    <footer className="bg-background-1 border-t-8 border-divider px-6 md:px-10 py-12">
+      <div className="max-w-6xl mx-auto flex flex-col gap-10">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+          {/* Identity */}
+          <div className="max-w-md">
+            <h2 className="text-xl font-bold">Noam Moskowitz</h2>
+
+            <p className="text-sm text-muted-foreground mt-2">
+              Software Engineer (Full Stack) — Payments & Platform
+            </p>
+
+            <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+              Building FX, payments, and production systems in regulated fintech.
+            </p>
+          </div>
+
+          {/* Navigation */}
+          <div>
+            <p className="text-sm font-semibold mb-3">Sections</p>
+
+            <nav className="flex flex-col gap-2">
+              {sectionLinks.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm text-muted-foreground hover:text-divider transition-colors"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          {/* Links */}
+          <div>
+            <p className="text-sm font-semibold mb-3">Elsewhere</p>
+
+            <div className="flex flex-col gap-2">
+              {socialLinks.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-divider transition-colors"
+                >
+                  {item.label}
+                  <ExternalLink size={13} />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* CV */}
+          <div>
+            <p className="text-sm font-semibold mb-3">Resume</p>
+
+            <DownloadCVButton />
+          </div>
         </div>
       </div>
-      <div>
-        <p className="pb-5 font-bold">
-          Interested in working together?
-          <a
-            className="font-normal text-primary underline hover:text-white pl-1"
-            href="https://wa.me/972546107337?text=Hi%20Noam,%20I%20am%20interested%20in%20in%20working%20together!"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get in touch!
-          </a>
-        </p>
-        <DownloadCVButton />
-      </div>
-    </div>
+    </footer>
   );
 };
 
