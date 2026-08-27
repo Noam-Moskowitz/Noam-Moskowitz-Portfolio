@@ -9,18 +9,27 @@ const Heading = () => {
       <div className="w-full flex flex-col justify-center px-10">
         <div className="pb-5">
           <FadeText
+            className="text-xl md:text-2xl font-semibold text-divider "
+            direction="up"
+            framerProps={{
+              show: { transition: { delay: 0.3 } },
+            }}
+            text="Full Stack"
+          />
+          <FadeText
             className="text-2xl md:text-5xl font-bold  text-divider "
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.2 } },
             }}
-            text="Software Engineer (Full Stack)"
+            text="Software Engineer"
           />
+
           <FadeText
             className="text-lg md:text-2xl font-bold  text-divider "
             direction="up"
             framerProps={{
-              show: { transition: { delay: 0.3 } },
+              show: { transition: { delay: 0.4 } },
             }}
             text=" Payments & Platform"
           />
