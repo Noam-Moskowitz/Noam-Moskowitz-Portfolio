@@ -12,7 +12,7 @@ const ExpereienceWarpper = () => {
       <h2 className="text-4xl font-bold">Experience</h2>
       <div className="space-y-10">
         {experienceArr.map((item, i) => (
-          <ExperienceSection key={i} title={item.title} content={item.content} />
+          <ExperienceSection key={i} title={item.title} content={item.content} links={item.links} />
         ))}
       </div>
     </div>
