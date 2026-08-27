@@ -1,5 +1,4 @@
 import { FadeText } from "../magicui/fade-text";
-import WordRotate from "../magicui/word-rotate";
 import ShinyButton from "../magicui/shiny-button";
 import DownloadCVButton from "../ui/DownloadCVButton";
 import { keySkillsArr } from "./HeroWrapper";
@@ -8,45 +7,39 @@ const Heading = () => {
   return (
     <div className=" md:w-[50%] py-5 md:h-[80vh] flex items-center justify-center">
       <div className="w-full flex flex-col justify-center px-10">
-        <div className="flex gap-2">
+        <div className="pb-5">
           <FadeText
-            className="text-2xl md:text-4xl font-bold  text-divider "
+            className="text-xl md:text-2xl font-semibold text-divider "
+            direction="up"
+            framerProps={{
+              show: { transition: { delay: 0.3 } },
+            }}
+            text="Full Stack"
+          />
+          <FadeText
+            className="text-2xl md:text-5xl font-bold  text-divider "
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.2 } },
             }}
-            text="Hi!"
+            text="Software Engineer"
           />
+
           <FadeText
-            className="text-2xl md:text-4xl font-bold text-black dark:text-white"
+            className="text-lg md:text-2xl font-bold  text-divider "
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.4 } },
             }}
-            text="I'm Noam Moskowitz"
+            text=" Payments & Platform"
           />
-        </div>
-        <div className="flex items-center gap-2">
           <FadeText
-            className="text-2xl md:text-4xl font-bold text-black dark:text-white"
+            className="text-md md:text-xl font-semibold text-black dark:text-white "
             direction="up"
             framerProps={{
               show: { transition: { delay: 0.6 } },
             }}
-            text="I'm A"
-          />
-          <FadeText
-            className=" font-bold text-black dark:text-white"
-            direction="up"
-            framerProps={{
-              show: { transition: { delay: 0.8 } },
-            }}
-            text={
-              <WordRotate
-                className="text-2xl md:text-4xl font-bold bg-divider text-primary-foreground  rounded p-2 "
-                words={["Full-Stack Developer", "Front-End Developer", "Back-End Developer"]}
-              />
-            }
+            text="Building FX, payments, and production systems in regulated fintech."
           />
         </div>
         <FadeText

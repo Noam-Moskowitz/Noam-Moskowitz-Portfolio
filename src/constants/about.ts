@@ -2,21 +2,21 @@ export const aboutMeArr = [
   {
     title: "About Me",
     content:
-      "I am a motivated Full Stack Developer with extensive hands-on experience in a wide range of technologies, including JavaScript, TypeScript, React, Node.js, MongoDB, MySQL, HTML, CSS, React Native, and AWS. My journey in web development has been fueled by a passion for solving complex problems and building innovative solutions.",
+      "I’m a full-stack software engineer with a backend and platform focus, currently working on B2B and B2C FX and payments systems in a regulated fintech environment. My work spans transaction processing, security, infrastructure, observability, and frontend development.",
   },
   {
-    title: "Education & Achievements",
+    title: "Payments & Platform",
     content:
-      "I graduated with honors in Full Stack Web Development from HackerU, achieving an outstanding average project grade of 99.5. This academic success reflects my dedication to mastering the latest web technologies and delivering high-quality projects.",
+      "A large part of my recent work has focused on financial infrastructure: payment flows, FX integrations, transaction ingestion, authorization, auditability, failure recovery, and the technical controls required to operate software that moves money.",
   },
   {
-    title: "Notable Projects",
+    title: "How I Work",
     content:
-      "One of my key accomplishments is the development of a client and admin app for a personal trainer, which serves 70+ users. I utilized AWS to optimize performance and reduce hosting costs, ensuring a seamless and scalable experience for both the trainer and their clients.",
+      "I’m comfortable owning systems from initial design through production. I regularly work directly with compliance, security, operations, and external providers to turn business or regulatory requirements into practical technical solutions.",
   },
   {
-    title: "Professional Qualities",
+    title: "Full-Stack Background",
     content:
-      "I am known for my strong commitment to continuous learning, teamwork, and delivering effective, high-quality solutions in dynamic, task-driven environments. I thrive in situations where complex challenges need innovative and reliable answers.",
+      "While my strongest recent experience is backend and platform engineering, I’ve worked across the stack with TypeScript, Node.js, Nuxt, React, React Native, MongoDB, AWS, and DigitalOcean, including shipping production web and mobile products.",
   },
 ];

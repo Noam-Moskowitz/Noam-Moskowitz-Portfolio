@@ -1,40 +1,47 @@
 import React from "react";
-import NumberTicker from "../magicui/number-ticker";
-import CertificationModal from "./CertificationModal";
+import { BookOpen, GraduationCap } from "lucide-react";
 
 interface EducationSectionProps {
-  title: string;
+  institution: string;
+  qualification: string;
   period: string;
   description: string;
-  grade: number;
+  type: string;
 }
 
 const EducationSection: React.FC<EducationSectionProps> = ({
-  title,
+  institution,
+  qualification,
   period,
   description,
-  grade,
+  type,
 }) => {
+  const Icon = type === "degree" ? GraduationCap : BookOpen;
+
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center border-l-2 pl-4 mt-4 md:border-0 md:pl-0 border-divider py-5 gap-8">
-      <img
-        className="w-[100px] rounded-full border-2 border-divider"
-        src="/images/hacker-u-logo-small.png"
-        alt="hacker u logo"
-      />
-      <div className="md:border-l-2 border-divider md:px-8">
-        <h1 className="font-bold">{title}</h1>
-        <h2 className="">{period}</h2>
-        <h3 className="pt-3 pb-5">
-          {description}
-          <NumberTicker
-            className=" font-bold ml-1 border-b-2 text-center border-divider px-1"
-            value={grade}
-          />
-        </h3>
-        <CertificationModal />
+    <article className="relative flex gap-5 md:gap-7">
+      {/* Timeline */}
+      <div className="flex flex-col items-center">
+        <div className="flex items-center justify-center w-11 h-11 rounded-full border-2 border-divider bg-background text-divider shrink-0">
+          <Icon size={21} />
+        </div>
+
+        <div className="w-px grow bg-divider/30 mt-2" />
       </div>
-    </div>
+
+      {/* Content */}
+      <div className="pb-10 md:pb-12">
+        <p className="text-sm font-semibold text-divider">{period}</p>
+
+        <h3 className="text-xl font-bold mt-1">{institution}</h3>
+
+        <p className="font-medium mt-1">{qualification}</p>
+
+        <p className="text-sm md:text-base text-muted-foreground leading-relaxed mt-4 max-w-3xl">
+          {description}
+        </p>
+      </div>
+    </article>
   );
 };
 
