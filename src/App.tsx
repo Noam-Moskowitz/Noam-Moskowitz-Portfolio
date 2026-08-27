@@ -14,15 +14,17 @@ function App() {
   return (
     <>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <NavBar />
-        <HeroWrapper />
-        <AboutWrapper />
-        <ExpereienceWarpper />
-        <ProjectsWrapper />
-        <EducationWrapper />
-        <ContactWrapper />
-        <FooterWrapper />
-        <Copyright />
+        <div className="transition-colors duration-200">
+          <NavBar />
+          <HeroWrapper />
+          <AboutWrapper />
+          <ExpereienceWarpper />
+          <ProjectsWrapper />
+          <EducationWrapper />
+          <ContactWrapper />
+          <FooterWrapper />
+          <Copyright />
+        </div>
       </ThemeProvider>
     </>
   );
