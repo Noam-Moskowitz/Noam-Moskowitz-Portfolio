@@ -1,42 +1,45 @@
-import { DiJavascript1, DiReact, DiMongodb, DiNodejsSmall, DiAws, DiMysql } from "react-icons/di";
+import { FaAws } from "react-icons/fa";
+import { SiMongodb, SiNuxtdotjs, SiRedis, SiTypescript } from "react-icons/si";
+import { DiNodejsSmall } from "react-icons/di";
+import { TbBrandReactNative } from "react-icons/tb";
+import { MdPayments, MdSecurity } from "react-icons/md";
+
 import Heading from "./Heading";
 import HeroImage from "./HeroImage";
 import { BiLogoTypescript } from "react-icons/bi";
-import { TbBrandReactNative } from "react-icons/tb";
 
 export const keySkillsArr = [
   {
-    icon: <DiJavascript1 size={30} />,
-    name: `JavaScript`,
-  },
-  {
     icon: <BiLogoTypescript size={30} />,
-    name: `TypeScript`,
-  },
-  {
-    icon: <DiReact size={30} />,
-    name: `React`,
-  },
-  {
-    icon: <TbBrandReactNative size={25} />,
-    name: `React Native`,
-  },
-
-  {
-    icon: <DiMongodb size={30} />,
-    name: `MongoDB`,
+    name: "TypeScript",
   },
   {
     icon: <DiNodejsSmall size={30} />,
-    name: `NodeJS`,
+    name: "Node.js",
   },
   {
-    icon: <DiAws size={30} />,
-    name: `AWS`,
+    icon: <MdPayments size={28} />,
+    name: "Payments & FX",
   },
   {
-    icon: <DiMysql size={30} />,
-    name: `MySQL`,
+    icon: <MdSecurity size={28} />,
+    name: "Application Security",
+  },
+  {
+    icon: <SiMongodb size={28} />,
+    name: "MongoDB",
+  },
+  {
+    icon: <FaAws size={28} />,
+    name: "AWS",
+  },
+  {
+    icon: <SiNuxtdotjs size={28} />,
+    name: "Nuxt",
+  },
+  {
+    icon: <TbBrandReactNative size={27} />,
+    name: "React Native",
   },
 ];
 
