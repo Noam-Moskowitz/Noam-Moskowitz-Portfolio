@@ -31,9 +31,9 @@ const MobileNavBar = () => {
         {navItems.map((item, i) => (
           <NavIcon
             key={i}
-            icon={item.icon}
-            link={item.link}
-            title={item.title}
+            icon={item!.icon}
+            link={item!.link}
+            title={item!.title}
             clickFunc={() => setOpen(false)}
           />
         ))}
